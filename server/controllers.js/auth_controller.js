@@ -1,10 +1,10 @@
+//this handles the user logins and information
 const users = require('../models/users')
 
 let id = 1
 
 module.exports ={
     login: (req,res,next)=>{
-        console.log(req.session)
         const {session} = req
         const {username, password} = req.body
 
